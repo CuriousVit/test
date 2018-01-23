@@ -30,11 +30,13 @@ After 2FA is enabled there are a couple of scenarios where you need to enter a p
 
 <details><summary>Create a new admin user in DB:</summary>
 <p>
+ 
 ```
 INSERT INTO users
 (email, username, password, type, firstname, lastname, state, access, is_demo, department, system_account, editable_account)
 VALUES
 ('vitali.kavaleuski+1@patientpop.com', 'vitali.kavaleuski+1', '$2y$10$mlLMjq2Qtv.uahfQWToaEehST3IAaat1DdMxHfMyAiUFJwa1aOmrO', 'INTERNAL', 'Name', 'Lastname', 'ACTIVE', 'ar1,aw1', 1, 'ADMIN', 0, 1);
 ```
+
 </p>
 </details>
